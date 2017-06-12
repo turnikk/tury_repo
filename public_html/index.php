@@ -1,4 +1,4 @@
 <?php
     $newName = 'Nikita';
-    echo "<p>Привет, $newName!</p>";
+    echo "<p>Привет, $newName!!!</p>";
 ?>
