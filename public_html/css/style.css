@@ -1,24 +1,4 @@
-/* font-family: "LatoRegular"; */
-@font-face {
-    font-family: "Lato";
-    src: url("/fonts/LatoRegular/LatoRegular.eot");
-    src: url("/fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/LatoRegular/LatoRegular.woff") format("woff"),
-    url("/fonts/LatoRegular/LatoRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-/* font-family: "LatoBold"; */
-@font-face {
-    font-family: "LatoBold";
-    src: url("/fonts/LatoBold/LatoBold.eot");
-    src: url("/fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/LatoBold/LatoBold.woff") format("woff"),
-    url("/fonts/LatoBold/LatoBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 * {
     margin: 0;
@@ -27,7 +7,7 @@
 }
 
 body {
-    font-family:LatoRegular;
+    font-family:Lato;
 }
 
 a {
@@ -60,6 +40,10 @@ form input:focus {
 
 }
 
+.wrapper {
+    width: 1141px;
+    margin: 0 auto;
+}
 .header {
     border-style: solid;
     border-width: 1px;
@@ -81,7 +65,7 @@ form input:focus {
     float: left;
 }
 
-.logo-label {
+.logo_label {
     font-family: Lato;
     color: #222222;
     font-size: 27px;
@@ -95,7 +79,7 @@ form input:focus {
     float: left;
 }
 
-.logo-label span {
+.logo_label span {
     font-family: Lato;
     color: #f16d7f;
     font-size: 27px; /* Приближение из-за подстановки шрифтов */
@@ -161,4 +145,258 @@ form input:focus {
     top: -7px;
     left: 69px;
     background: url("../img/arrow_drop_down.png") no-repeat;
+}
+
+
+.search form {
+    float: left;
+}
+
+.search .field_search {
+    display: block;
+    float: left;
+    font-family: Lato;
+    color: #a4a4a4;
+    font-size: 14px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    width: 231px;
+    border: 1px solid #e6e6e6;
+    height: 38px;
+
+}
+
+.search .btn_search {
+    float: left;
+    display: block;
+    border: 1px solid #e6e6e6;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    box-sizing: border-box;
+    width: 35px;
+    height: 38px;
+    background: url("../img/btn_search.png") 50% 50% no-repeat;
+}
+
+.account {
+    float: right;
+    padding: 31px 0 0 0;
+    position: relative;
+}
+
+.account a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.account .basket {
+
+    display: block;
+    float: left;
+    width: 32px;
+    height: 29px;
+    padding-top: 9px;
+    background: url("../img/basket.png") 50% 50% no-repeat;
+
+}
+
+.account .my_account {
+    display: block;
+    float: left;
+    background: url("../img/btn_accaunt.png") 109px 16px no-repeat #f16d7f;
+    width: 130px;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 13px 29px 11px 19px;
+    margin-left: 26px;
+
+}
+
+.navigation {
+    background-color: #ffffff;
+    height: 50px;
+    padding-bottom: 1px;
+}
+
+nav {
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.navigation li a {
+    font-family: Lato;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 51px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    display: block;
+
+}
+/* сделать анимацию */
+
+
+.slider {
+    background: #e8e8e8 url("../img/slider.jpg") no-repeat top left;
+    background-size: cover;
+    /*background-color: #e8e8e8;*/
+    height: 665px;
+    box-sizing: border-box;
+    padding-top: 1px;
+}
+
+.slider .slider_men {
+    background: url("../img/slider.jpg") no-repeat;
+    margin: 0 auto;
+    width: 1365px;
+    height: 665px;
+    padding-top: 1px;
+    box-sizing: border-box;
+}
+
+.slider .slider_men_title {
+    font-family: Lato;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 900;
+    border-left: 12px solid #f16d7f;
+    height: 92px;
+    padding-left: 12px;
+    line-height: 45px;
+    margin-top: 224px;
+
+}
+
+.slider_men_title span:first-child {
+    font-size: 60px;
+
+}
+
+.slider_men_title span:last-child {
+    color: #f16d7f;
+}
+
+
+footer {
+    padding-top: 129px;
+
+}
+
+footer p {
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+
+}
+
+footer .logo {
+
+}
+
+footer .logo .logo_img {
+    padding-top: 0px;
+}
+
+footer .logo .logo_label {
+    padding-left: 13px;
+    display: inline;
+    vertical-align: middle;
+    padding-top: 14px;
+}
+
+footer p {
+    margin-top: 29px;
+}
+
+footer .footer_column {
+    float: left;
+}
+
+.footer_column ul {
+    list-style-type: none;
+}
+
+.footer_column ul li {
+    padding-bottom: 15px;
+}
+
+.footer_column ul a {
+    text-decoration: none;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.column1 {
+    padding-right: 64px;
+    box-sizing: border-box;
+}
+
+.column2 {
+    padding-right: 129px;
+    box-sizing: border-box;
+}
+
+.column3 {
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+.footer_column h4 {
+    color: #f16d7f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 45px;
+}
+
+.footer_bottom {
+    background-color: #e6e6e6;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: middle;
+    height: 79px;
+    box-sizing: border-box;
+    padding-top: 33px;
+    font-family: Lato;
+    margin-top: 89px;
+}
+
+.footer-main_social-buttons {
+
+}
+
+.footer-main_item {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 32px;
+    height: 32px;
+    margin-right: 4.5px;
+}
+
+.footer-main_link {
+    display: inline-block;
+    padding: 7px 0 0 8px;
+    height: 32px;
+    width: 32px;
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.footer-main_list:last-child {
+    margin-right: 14px;
 }
