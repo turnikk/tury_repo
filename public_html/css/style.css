@@ -918,11 +918,265 @@ footer .footer_column {
     width: 32px;
     text-decoration: none;
     color: #b2b2b2;
-    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-size: 16px;
     font-weight: 400;
     box-sizing: border-box;
 }
 
 .footer-main_list:last-child {
     margin-right: 14px;
+}
+
+
+.breadcrumbs {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+.breadcrumbs .wrapper {
+    padding: 65px 0;
+}
+
+.breadcrumbs .wrapper > span {
+    color: #f16d7f;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.breadcrumbs .breadcrumbs_menu {
+    list-style-type: none;
+    float: right;
+}
+
+.breadcrumbs_menu li {
+    float: left;
+}
+
+.breadcrumbs_menu li span {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.breadcrumbs_menu li a {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.breadcrumbs_menu li a.active {
+    color: #f16d7f;
+    font-weight: 700;
+}
+
+.slider_category {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    height: 777px;
+    position: relative;
+    z-index: 1;
+}
+
+.slider_category .btn_back, .slider_category .btn_next {
+    position: absolute;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    display: block;
+}
+
+.btn_back {
+    left: 0;
+    top: 47%;
+    background: url("../img/slider_btn_down.png") 21px 17px no-repeat;
+
+}
+
+.btn_next {
+    right: 0;
+    top: 47%;
+    background: url("../img/slider_btn_next.png") 18px 17px no-repeat;
+
+}
+
+.slider_category .category_bg {
+    width: 597px;
+    height: 724px;
+    background: url("../img/category_bg.jpg") no-repeat;
+}
+
+
+.cart_collection {
+    margin-top: -86px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    /*width: 1141px;*/
+    height: 730px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.cart_collection .cart_collection_wrapper {
+    width: 615px;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+
+.cart_collection .desc_collection {
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 43px;
+}
+
+.desc_collection h4 {
+    color: #f16d7f;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    /*border-bottom: 1px solid #eaeaea;*/
+
+}
+
+.desc_collection h3 {
+    color: #4d4d4d;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 67px;
+}
+
+.desc_collection p {
+    color: #5e5e5e;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+
+.desc_collection span {
+    color: #b9b9b9;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.desc_collection span span {
+    color: #2f2f2f;
+}
+
+.desc_collection span.material {
+    margin-right: 44px;
+}
+
+.desc_collection > span:first-child {
+
+}
+
+.desc_collection .price {
+    color: #ef5b70;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    margin-top: 37px;
+}
+
+.cart_collection .choice_param {
+
+}
+
+.choice_param {
+    margin-top: 63px;
+}
+
+.choice_param .choice_param_column {
+    margin-right: 54px;
+
+}
+
+.choice_param div.choice_param_column:first-child {
+    margin-left: 20px;
+}
+
+/*Почему то не отрабатывает*/
+.choice_param_column:last-child {
+    margin-right: 0px;
+}
+
+.last_elem {
+    margin-right: 0px;
+}
+
+.choice_param_column .select_choise select, .choice_param_column input {
+    border-radius: 0;
+    padding-left: 37px;
+    /*padding-top: 12px;*/
+    box-sizing: border-box;
+    line-height: 1;
+    -webkit-appearance: none;
+    width: 144px;
+    height: 35px;
+    color: #bcbcbc;
+    font-size: 13px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    background-color: #ffffff;
+}
+
+.select_choise {
+    /*margin-right: 53px;*/
+}
+
+.choice_param .btn_add_to_cart {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ef5b70;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 537px;
+    height: 55px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #ef5b70;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 18px 0;
+    margin-top: 28px;
+}
+
+
+.product_images {
+    margin-top: 119px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 94px;
+
+}
+
+.product_images h2 {
+    text-transform: uppercase;
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.product_images .catalog {
+    margin-top: 72px;
+
 }
