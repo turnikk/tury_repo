@@ -1,0 +1,298 @@
+$wrapperWidth:1140px
+$catalogWidth:848px
+.catalog-main
+  margin-top: 60px
+//a
+//color: #6f6e6e
+//text-decoration: none
+.catalog-menu
+  width: 243px
+.menu-header
+  list-style-type: none
+  .menu-header__item
+    margin-bottom: 18px
+    text-align: left
+    width: 243px
+    .menu-header__link
+      text-decoration: none
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 700
+      display: block
+      text-transform: uppercase
+      padding-left: 10px
+      padding-top: 10px
+      border-left: 5px solid #ef5b70
+      border-bottom: 1px solid #ebebeb
+      height: 37px
+      box-sizing: border-box
+      background: url("../img/down.png") 220px 20px no-repeat
+    .menu-header__link:last-child
+      margin-bottom: 0px
+    .link-active
+      color: #ef5b70
+    ul
+      padding-top: 25px
+      list-style: none
+      li
+        text-align: left
+        margin-bottom: 15px
+        a
+          color:  #6f6e6e
+          font-weight: 400
+          display: inline-block
+          padding-left: 15px
+          text-transform: lowercase
+.catalog-product
+  //width: $catalogWidth
+  box-sizing: border-box
+  margin-left: 48px
+.filter
+  .filter-block
+    height: 119px
+    width: 260px
+    margin-right: 22px
+    float: left
+    h3
+      margin-bottom: 15px
+      font-size: 14px
+      font-weight: 700
+      line-height: 16px
+      text-align: left
+      text-transform: uppercase
+      color: #6f6e6e
+.trend-link
+  a
+    display: inline-block
+    font-size: 14px
+    font-weight: 400
+    text-align: left
+    line-height: 26px
+    text-decoration: none
+    color: #6f6e6e
+  a:hover
+    color: black
+  span
+    padding: 0 8px
+.sort-block
+  width: 100%
+  height: 50px
+  background-color: #f3f3f3
+  box-sizing: border-box
+  padding-left: 15px
+  padding-top: 10px
+  select
+    background: transparent
+    -moz-appearance: none
+    -webkit-appearance:none
+      border: none
+  .sort-name
+    float: left
+    padding-left: 13px
+    border-style: solid
+    border-width: 1px
+    border-color:  #ebebeb
+    box-sizing: border-box
+    background-color:  #ffffff
+    width: 153px
+    height: 30px
+    color:  #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+    text-align: left
+    select
+      display: inline-block
+      height: 28px
+      margin-left: 16px
+      border: none
+      border-left: 1px solid #ebebeb
+      padding-left: 11px
+      color:  #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+      text-align: left
+  //padding-right: 24px
+  .sort-quantity
+    padding-left: 13px
+    margin-left: 10px
+    float: left
+    border-style: solid
+    border-width: 1px
+    border-color: #ebebeb
+    box-sizing: border-box
+    background-color: #ffffff
+    width: 119px
+    height: 30px
+    color:  #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+    text-align: left
+    select
+      display: inline-block
+      height: 28px
+      border: none
+      margin-left: 5px
+      border-left: 1px solid #ebebeb
+      padding-left: 15px
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      line-height: 26px
+      text-align: left
+//padding-right: 28px
+.products
+  width: $catalogWidth
+  box-sizing: border-box
+  .product_item
+    width: 263px
+    //width: $catalogWidth/3-(30*2)
+    height: 277px
+    display: block
+    margin-right: 29px
+    margin-bottom: 59px
+    float: left
+    box-sizing: border-box
+    text-decoration: none
+    text-align: left
+    .name
+      color: #222222
+      font-weight: 400
+      font-size: 13px
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 2.5
+    .price
+      color: #f16d7f
+      font-size: 16px
+      font-weight: 700
+  .product_item:nth-child(3), .product_item:nth-child(6),.product_item:nth-child(9)
+    margin-right: 0px
+  .product_item > p
+//padding-left: 15px
+.catalog-footer
+  margin-top: 64px
+  .pagination
+    border-radius: 3px
+    border: 1px solid #ebebeb
+    box-sizing: border-box
+    background-color:  #ffffff
+    width: 261px
+    height: 44px
+    padding: 10px 12px
+    .pagination-link
+      display: inline-block
+      margin-right: 16px
+      color: #aaaaaa
+      font-size: 14.8px
+      font-weight: 400
+      line-height: 26px
+      text-align: left
+      text-decoration: none
+    .pagination-link:hover
+      color: #ef5b70i
+    .last-link
+      margin-right: 0
+    .first-link
+      margin-right: 9px
+    .active-link
+      color: #ef5b70
+      font-size: 17px
+      font-weight: 600
+      line-height: 26px
+      padding-bottom: 1px
+  .btn-view-all
+    margin-left: 436px
+    width: 150px
+    height: 44px
+    font-size: 16px
+    font-weight: 400
+    line-height: 26px
+    color: #ef5b70
+    border-color: #ef5b70
+  .btn-view-all:hover
+    color: #4e4e4e
+    border-color: #4e4e4e
+
+.featured-box
+  margin-top: 110px
+  height: 341px
+  background-color: #222224
+  box-sizing: border-box
+  .featured-box__content
+    padding-top: 89px
+    .featured-box__content-column
+      width: $wrapperWidth/3
+      text-align: center
+      color: #fbfbfb
+      h4
+        font-size: 19.96px
+        font-weight: 700
+        text-align: center
+        transform: scaleX(1.0017)
+        margin-top: 25px
+        margin-bottom: 14px
+      p
+        font-size: 13.97px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+        transform: scaleX(1.0018)
+
+
+
+.product_item:hover 
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16)
+
+
+/*.row_item */
+    /*float: left*/
+    /*width: 261px*/
+    /*height: 364px*/
+    /*margin-right: 32px*/
+/**/
+
+.product_item-hover 
+  position: absolute
+  top: 0
+  display: none
+  background-color: rgba(0, 0, 0, 0.59)
+  width: 261px
+  height: 282px
+  padding: 98px 68px 0 71px
+  box-sizing: border-box
+
+.product_item:hover .product_item-hover 
+  display: block
+
+
+
+.product_item 
+  position: relative
+
+
+
+.product_item-link 
+  text-decoration: none
+
+.product_item-link .btn-cart
+  display: block
+  top: 98px
+  left: 71px
+  width: 121px
+  box-sizing: border-box
+  border: 1px solid #ffffff
+  padding: 10px 8px 12px 42px
+  background: url(../img/basket_drop-down.png) no-repeat
+  background-position-x: 11px
+  background-position-y: 8px
+  border-radius: 4px
+  color: #ffffff
+  font-size: 13px
+  font-weight: 700
+  text-align: left
+  margin-bottom: 7px
+  cursor: pointer
+  display: block
